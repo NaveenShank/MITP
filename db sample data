@@ -12,6 +12,7 @@ INSERT INTO products VALUES (10, "Prozac", "Stark Saver");
 INSERT INTO sales VALUES (1, 1, 40, 15, 14.25, "2021-04-10 01:10:20");
 INSERT INTO sales VALUES (2, 2, 10, 5, 28.55, "2021-04-20 05:11:20");
 INSERT INTO sales VALUES (3, 3, 30, 10, 27.50, "2021-03-10 10:35:40");
+INSERT INTO sales VALUES (4, 4, 35, 15, 7.50, "2021-03-11 01:35:20");
 
 INSERT INTO supplier VALUES (1, 1, "mayne@yahoo.com");
 INSERT INTO supplier VALUES (2, 2, "clindatech@gmail.com");
