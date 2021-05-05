@@ -1,0 +1,29 @@
+DROP SCHEMA IF EXISTS salesdb;
+CREATE SCHEMA salesdb;
+USE salesdb;
+
+CREATE TABLE products (
+product_id INT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(50) NOT NULL,
+supplier_name VARCHAR(50),
+PRIMARY KEY (product_id)
+);
+
+CREATE TABLE sales (
+sales_id INT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+product_id INT(20) UNSIGNED NOT NULL,
+available_units INT(20) UNSIGNED,
+units_sold INT(20) UNSIGNED,
+cost DECIMAL(5,2) UNSIGNED NOT NULL,
+purchase_date DATETIME NOT NULL,
+PRIMARY KEY (sales_id),
+FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+CREATE TABLE supplier (
+supplier_id INT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+product_id INT(20) UNSIGNED NOT NULL,
+contact VARCHAR(50),
+PRIMARY KEY (supplier_id),
+FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
