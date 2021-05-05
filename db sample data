@@ -1,0 +1,18 @@
+INSERT INTO products VALUES (1, "Doxycycline", "mayne-pharma");
+INSERT INTO products VALUES (2, "Clindamycin", "ClindaTech");
+INSERT INTO products VALUES (3, "Tretinoin", "Quality Pharmacy");
+INSERT INTO products VALUES (4, "Alpion", "Quality Pharmacy");
+INSERT INTO products VALUES (5, "Antihistamines", "Quality Pharmacy");
+INSERT INTO products VALUES (6, "Aspirin", "Stark Saver");
+INSERT INTO products VALUES (7, "Paracetamol", "Lifeline Company");
+INSERT INTO products VALUES (8, "Timolol", "Golden Blood Pharmacy");
+INSERT INTO products VALUES (9, "Vitamin C", "Quality Pharmacy");
+INSERT INTO products VALUES (10, "Prozac", "Stark Saver");
+
+INSERT INTO sales VALUES (1, 1, 40, 15, 14.25, "2021-04-10 01:10:20");
+INSERT INTO sales VALUES (2, 2, 10, 5, 28.55, "2021-04-20 05:11:20");
+INSERT INTO sales VALUES (3, 3, 30, 10, 27.50, "2021-03-10 10:35:40");
+
+INSERT INTO supplier VALUES (1, 1, "mayne@yahoo.com");
+INSERT INTO supplier VALUES (2, 2, "clindatech@gmail.com");
+INSERT INTO supplier VALUES (3, 3, "qualpharm@gmail.com");
