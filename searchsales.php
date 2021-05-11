@@ -57,7 +57,7 @@
       require_once("functions/process.php");
       if (!$_POST)
       {
-        echo "<p>Please enter a product name to search</p>";
+        echo "<p>Please enter a product id to search</p>";
       }
       else
       {
