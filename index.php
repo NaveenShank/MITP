@@ -14,6 +14,7 @@
       <nav>
         <a href="index.php">Home</a>
         <a href="sales.php">Sales</a>
+        <a href="searchsales.php">Search Sales</a>
         <a href="">Predictions</a>
         <a href="">Download</a>
       </nav>
