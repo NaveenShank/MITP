@@ -5,6 +5,12 @@
     <meta name="keywords" content="PHP" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Peoples Health Pharmacy</title>
+    <style>
+      body {background-color: blanchedalmond; font-family: helvetica;}
+      nav {align: center; background-color: darkred;}
+      a {text-align: center; background-color: salmon;}
+      h2 {text-align: center; font-size: 200%;}
+    </style>
   </head>
 
   <body>
