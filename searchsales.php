@@ -23,11 +23,10 @@
       <p></p>
 
       <?php
+      //connects to database and runs query to display all products with id
       require_once("functions/process.php");
-
       $query = "select product_id, product_name from products";
       $results = mysqli_query($conn, $query);
-
       echo "<table width='50%' border='1'>";
       echo "<tr>
         <th>Product ID</th>
@@ -44,6 +43,8 @@
       mysqli_free_result($results);
       mysqli_close($conn);
       ?>
+
+      <!-- form entry to search for product id -->
       <p></p>
       <form action="searchsales.php" method="post">
       <p><label for="productid">Search Product (ID):</label>
@@ -54,6 +55,7 @@
 
 
       <?php
+      //checks for post of productid from form
       require_once("functions/process.php");
       if (!$_POST)
       {
@@ -61,16 +63,16 @@
       }
       else
       {
+        //sets product id and runs query to display the data for specific product
+        //***curently not working
         $productid = trim($_POST["productid"]);
-
         $salesquery = "select sales_id, available_units, units_sold, cost, purchase_date
         from sales
         where product_id = '$productid'";
+
+        //***cant execute this query
         $results = mysqli_query($conn, $salesquery)
-
         or die('Unable to execute query');
-        echo $results;
-
         if($results->num_rows == 0)
         {
           echo "no matches";
@@ -99,12 +101,9 @@
         }
         mysqli_free_result($results);
       }
-
-
       ?>
 
     </main>
-
     <footer>
         <p>Copyright Peoples Health Pharmacy© 2021<p>
     </footer>

@@ -7,6 +7,7 @@
     <title>Sales - Peoples Health Pharmacy</title>
   </head>
 
+  //navigation
   <body>
     <header>
       <img src="PHP_logo.png">
@@ -22,12 +23,13 @@
     <main>
 
       <?php
+      //connects to database and runs query to display all data in sales table
       require_once("functions/process.php");
-
       $query = "select sales_id, product_id, available_units, units_sold,
       cost, purchase_date from sales";
       $results = mysqli_query($conn, $query);
 
+      //displays data in table
       echo "<table width='80%' border='1'>";
       echo "<tr>
         <th>sales_id</th>
@@ -51,12 +53,9 @@
       echo "</table>";
       mysqli_free_result($results);
       mysqli_close($conn);
-
-
       ?>
 
     </main>
-
     <footer>
         <p>Copyright Peoples Health Pharmacy© 2021<p>
     </footer>
