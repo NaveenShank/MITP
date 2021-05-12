@@ -17,6 +17,7 @@
               <li><a href="index.php">Home</a></li>
               <li><a href="sales.php">Sales</a></li>
               <li><a href="searchsales.php" style="color:#ff8900;">Search Sales</a></li>
+              <li><a href="newsales.php">New Sales</a></li>
               <li><a href="">Predictions</a></li>
               <li><a href="">Download</a></li>
               <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
@@ -25,7 +26,7 @@
         </div>
     </header>
     <main>
-      
+
       <h1 style="text-align:center;color: #912121;">Please enter the details of the product</h1><br/>
       <!-- form entry to search for product id -->
       <p></p>
@@ -43,7 +44,7 @@
 
 
       <?php
- 
+
       //checks for post of productid from form
       require_once("functions/process.php");
       if (!$_POST)
@@ -61,7 +62,7 @@
         //***cant execute this query
         $results = mysqli_query($conn, $salesquery)
         or die('Unable to execute query');
-          
+
         if($results->num_rows == 0)
         {
           echo "no matches";
@@ -89,11 +90,11 @@
         mysqli_free_result($results);
           mysqli_close($conn);
       }
-        
+
 
       ?>
 
     </main>
-    
+
   </body>
 </html>

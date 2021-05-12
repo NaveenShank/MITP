@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>    
+  <head>
     <meta charset="utf-8" />
     <meta name="keywords" content="PHP" />
     <link href="styles/index.css" rel="stylesheet"/>
     <title>Sales - Peoples Health Pharmacy</title>
   </head>
 
-  
+
   <body>
     <header>
         <div class="navbar">
@@ -18,6 +18,7 @@
               <li><a href="index.php">Home</a></li>
               <li><a href="sales.php" style="color:#ff8900;">Sales</a></li>
               <li><a href="searchsales.php">Search Sales</a></li>
+              <li><a href="newsales.php">New Sales</a></li>
               <li><a href="">Predictions</a></li>
               <li><a href="">Download</a></li>
               <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
@@ -27,7 +28,7 @@
     </header>
     <main>
         <h1 style="text-align:center;color: #912121;">All Products </h1>
-        
+
             <?php
       //connects to database and runs query to display all products with id
       require_once("functions/process.php");
@@ -47,7 +48,7 @@
       }
       echo "</table>";
       mysqli_free_result($results);
-      
+
       ?>
         <br/><br/><h1 style="text-align:center;color: #912121;">All Sales </h1>
 
