@@ -1,0 +1,490 @@
+/*
+filename:Naveen Shankar
+author: Naveen Shankar
+created: 20/08/2019
+last modified: 03/09/2019
+description: index.
+*/
+
+.navbar{
+    width: 100%;
+    margin:0 auto;
+    background-color: aliceblue;
+    
+}
+
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    top:0; 
+}
+    
+nav a:hover{
+    color:darkorange;
+}
+
+nav a::before{
+    content:'';
+    display:block;
+    height: 3px;
+    width: 100%;
+    background-color: #3d72cb;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width:100%;
+}
+
+nav #point
+{
+    color:darkorange;
+    transition: ease;
+}
+
+
+.logo {
+    float: right;
+    padding: 0;
+    height:60px;
+    width: auto;
+}
+
+.marquee{
+    width: 100vw;
+    height: 10vh;
+    background-color: #f3f3f3;
+    color: #1f61b7;
+    overflow: hidden;
+}
+/*
+.marquee-content{
+    list-style: none;
+    height: 70%;
+    display: flex;
+    animation: scrolling 15s linear infinite;
+    
+}
+
+
+@keyframes scrolling{
+    0%{ transform: translateX(100vw);}
+    100%{ transform: translateX(-100vw);}
+    
+}*/
+
+.marquee-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 90vw;
+    height: 3vh;
+    flex-shrink: 0;
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.marquee-content:hover{
+    animation-play-state: paused;
+}
+
+body 
+{
+    background-image: url("../styles/images/backgroundsquare.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p{
+    width: 85%;
+}
+
+#indexarticle{
+    
+    align-self: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+#Footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.3rem;
+    background-color: white;
+    font-style: italic;
+    text-align: left;
+    clear: both;
+}
+
+/* CSS for topic page */
+
+#section1{
+    width: 45%;
+    float: left;
+    font-family:Georgia, serif;
+
+}
+
+#section2 {
+    width: 45%;
+    float:right;
+    font-family:Georgia, serif;
+
+}
+
+#section3{
+    clear: both;
+    font-family:Georgia, serif;
+}
+
+table{
+    align-self: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+#section5{
+    font-family:"proxima nova";
+    width: 60%;
+    font-size: 19px;
+    float: left;
+}
+
+#section6{
+    clear: both;
+    
+    align-self: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+#gototopic{
+    
+    align-self: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.heading{
+    color: #080172;
+    text-decoration: underline;
+    text-decoration-color: rgb(66, 101, 23);
+    
+}
+
+#table_caption{
+    font-family:"proxima nova";
+    font-weight: 500;
+    font-size: 28px;
+    color: #bb3d3d;
+    text-align: center;
+    padding: 10px 80px;
+    position: relative;
+}
+
+table, td, tb, th {
+    border: 1px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+th{
+    background-color: #666661;
+    color:white;
+    font-size: 19px;
+}
+
+td{
+    background-color: floralwhite;
+    font-size: 17px;
+}
+
+#aside{
+    display: block;
+    width: 30%;
+    float: right;
+    margin: 20px;
+    padding: 5px 20px 30px 25px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #94b2cc;
+    align-content: center;
+}
+
+#aside_text{
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+    text-align: center;
+}
+
+.link_topic{
+    font-family:"proxima nova";
+    font-weight: 100;
+    font-size: 20px;
+    color: #1c591e;
+    text-align: center;
+    
+    border: solid 1px #1c591e;
+    border-radius: 25px;
+    padding: 10px 80px;
+    transition-duration: 200ms;
+}
+
+.link_topic:hover{
+    background-color: #273b85;
+    color:#fff;    
+}
+
+.link_quiz{
+    font-family:"proxima nova";
+    font-weight: 100;
+    font-size: 20px;
+    color: #1c591e;
+    text-align: center;
+    border: solid 1px #1c591e;
+    border-radius: 25px;
+    padding: 10px 100px;
+    transition-duration: 200ms;
+    position: relative;
+}
+
+.link_quiz:hover{
+    background-color:#273b85;
+    color:#fff;    
+}
+
+dl>dt {
+    
+    font-weight: 600;
+}
+
+.rotate1
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 0px 0px;
+    animation: r1 4s linear infinite;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.rotate1:hover{
+    animation-play-state: paused;
+}
+
+@keyframes r1
+{
+    0%{transform:rotate(360deg);}
+    10%{transform:rotate(0deg);}
+}
+
+ol ul li {
+    list-style-type:square;
+}
+
+span{
+    font-weight: bold;
+}
+
+fieldset p {
+    font-family:Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+form{
+    align-self: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: #a0a1ac;
+}
+fieldset:hover{
+    border-style: solid;
+    border-color: #07463d;
+}
+
+
+.questions{
+    color: #273b85; 
+    font-size: 20px;
+    /*border-color:#271f1f;
+    border-style:solid dotted solid dotted;*/
+    
+    
+}
+
+
+#personal_details{
+    color: #093415;
+    border-style: solid;
+    border-color: rgba(211, 78, 78, 0.78);
+    font-size: 20px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    font-family: serif;
+    color: maroon;
+}
+
+#view_term1,#view_term2,#view_term3,#view_term4,#view_term5{
+    display: none;
+}
+
+#term1,#term2,#term3,#term4,#term5{
+    background-color: #646471;
+  border: solid 0px;
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer; 
+}
+#term1:hover{
+        background-color:#403935;
+    color:#fff;;
+}
+#term2:hover{
+        background-color:#403935;
+    color:#fff;;
+}
+#term3:hover{
+        background-color:#403935;
+    color:#fff;;
+}
+#term4:hover{
+        background-color:#403935;
+    color:#fff;;
+}
+#term5:hover{
+        background-color:#403935;
+    color:#fff;;
+}
+
+#timeisup{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+#time{
+    color: black;
+    width: 20%;
+    background-color: #c66d6d;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    margin: 2px 500px;
+  
+}
+
+#revolve{
+    padding: 130px 110px;
+}
+
+.button {
+    background-color: #0a690d;
+  border: solid 0px;
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;    
+}
+.button:hover{
+    background-color: #57b933;
+    color: black;
+}
+
+#secondAttempt, #login, #logout, #retry {
+    background-color: #0a690d;
+  border: solid 0px;
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer; 
+}
+
+
+#secondAttempt:hover{
+    background-color: #57b933;
+    color: black;
+}
+
+#login:hover{
+    background-color: #57b933;
+    color: black;
+}
+
+#logout:hover{
+    background-color: #57b933;
+    color: black;
+}
+#retry:hover{
+    background-color: #57b933;
+    color: black;
+}
+
+
+#but{
+    align-content: center;
+    padding: 5px 100px 5px 340px;
+}
+
+#search{
+    float: left;
+    width: 40%;
+    
+}
+
+#table{
+    float: right;
+    width: 60%;
+}
+
+
+

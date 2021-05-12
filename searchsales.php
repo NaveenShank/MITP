@@ -3,24 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="keywords" content="PHP" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+     <link href="styles/index.css" rel="stylesheet"/>
     <title>Search Sales - Peoples Health Pharmacy</title>
   </head>
 
   <body>
     <header>
-      <img src="PHP_logo.png">
-      <h2>Employee Login</h2>
+        <div class="navbar">
+       <a href="styles/images/Logo.png" target="_blank"> <img src="styles/images/Logo.png" alt="logo" title="Logo" class="logo" >
+        </a>
       <nav>
-        <a href="index.php">Home</a>
-        <a href="sales.php">Sales</a>
-        <a href="searchsales.php">Search Sales</a>
-        <a href="">Predictions</a>
-        <a href="">Download</a>
-      </nav>
+          <ul>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="sales.php">Sales</a></li>
+              <li><a href="searchsales.php" style="color:#ff8900;">Search Sales</a></li>
+              <li><a href="">Predictions</a></li>
+              <li><a href="">Download</a></li>
+              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
+          </ul>
+        </nav>
+        </div>
     </header>
     <main>
-      <p></p>
+      
 
       <?php
       //connects to database and runs query to display all products with id
@@ -41,20 +46,23 @@
       }
       echo "</table>";
       mysqli_free_result($results);
-      mysqli_close($conn);
+      
       ?>
+
 
       <!-- form entry to search for product id -->
       <p></p>
-      <form action="searchsales.php" method="post">
+      <form method="post" action="searchsales.php">
+          <fieldset>
       <p><label for="productid">Search Product (ID):</label>
-      <input type="text" name="productid" Size="40"/></p>
-      <p><button type="submit" value="Submit">Submit</button></p>
+      <input type="text" name="productid" id="productid" Size="40"/></p>
+      <p><input type="submit" name="submit" value="search"/></p></fieldset>
       </form>
       <p></p>
 
 
       <?php
+ 
       //checks for post of productid from form
       require_once("functions/process.php");
       if (!$_POST)
@@ -67,12 +75,13 @@
         //***curently not working
         $productid = trim($_POST["productid"]);
         $salesquery = "select sales_id, available_units, units_sold, cost, purchase_date
-        from sales
+        from salesdb
         where product_id = '$productid'";
 
         //***cant execute this query
         $results = mysqli_query($conn, $salesquery)
         or die('Unable to execute query');
+          
         if($results->num_rows == 0)
         {
           echo "no matches";
@@ -100,12 +109,15 @@
           echo "</table>";
         }
         mysqli_free_result($results);
+          mysqli_close($conn);
       }
+        
+
       ?>
 
     </main>
-    <footer>
-        <p>Copyright Peoples Health Pharmacy© 2021<p>
+    <footer id="Footer"> <p style="text-align:center;">
+        Copyright Peoples Health Pharmacy© 2021</p>
     </footer>
   </body>
 </html>

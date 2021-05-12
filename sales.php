@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>    
     <meta charset="utf-8" />
     <meta name="keywords" content="PHP" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/index.css" rel="stylesheet"/>
     <title>Sales - Peoples Health Pharmacy</title>
   </head>
 
-  //navigation
+  
   <body>
     <header>
-      <img src="PHP_logo.png">
-      <h2>Employee Login</h2>
+        <div class="navbar">
+       <a href="styles/images/Logo.png" target="_blank"> <img src="styles/images/Logo.png" alt="logo" title="Logo" class="logo" >
+        </a>
       <nav>
-        <a href="index.php">Home</a>
-        <a href="sales.php">Sales</a>
-        <a href="searchsales.php">Search Sales</a>
-        <a href="">Predictions</a>
-        <a href="">Download</a>
-      </nav>
+          <ul>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="sales.php" style="color:#ff8900;">Sales</a></li>
+              <li><a href="searchsales.php">Search Sales</a></li>
+              <li><a href="">Predictions</a></li>
+              <li><a href="">Download</a></li>
+              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
+          </ul>
+        </nav>
+        </div>
     </header>
     <main>
+        <h1 style="text-align:center;color: #912121;">All Sales </h1>
 
       <?php
       //connects to database and runs query to display all data in sales table
@@ -56,8 +62,8 @@
       ?>
 
     </main>
-    <footer>
-        <p>Copyright Peoples Health Pharmacy© 2021<p>
+     <footer id="Footer"> <p style="text-align:center;">
+        Copyright Peoples Health Pharmacy© 2021</p>
     </footer>
   </body>
 </html>
