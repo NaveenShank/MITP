@@ -25,7 +25,7 @@
               <li><a href="searchsales.php">Search Sales</a></li>
               <li><a href="">Predictions</a></li>
               <li><a href="">Download</a></li>
-              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
+              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
           </ul>
         </nav>
         </div>
@@ -33,17 +33,18 @@
     <main>
        <h1 style="text-align:center;color: #912121;">Sales reporting and prediction system </h1><br/>
         
-        <p style="font-size: 150%; text-align:justify; width:90%;">This is a Sales reporting and Predection system for People Health Pharmacy. This application enables us to get transaction details for all sales done by People Health Pharmacy. Furthermore this application also predicts the future sales for a perticular item based on the sales history. In this way it gives us insights of how every product will perform in the coming months. Finally a CSV report will be generated and available for download end of every week and month which will contain the sales history for the selected period. </p>
-        <br/>
+        <p style="font-size: 100%; text-align:justify; width:90%;">This is a Sales reporting and Predection system for People Health Pharmacy. This application enables us to get transaction details for all sales done by People Health Pharmacy. Furthermore this application also predicts the future sales for a perticular item based on the sales history. In this way it gives us insights of how every product will perform in the coming months. Finally a CSV report will be generated and available for download end of every week and month which will contain the sales history for the selected period. </p>
+        
+        <p style="text-align:center";>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="styles/images/sales.jpg" target="_blank"> <img src="styles/images/sales.jpg" alt="sales" title="sales" class="sales" ></a></p>
         <h2>View: </h2>
         <ul>
               <li><a href="sales.php">All Sales</a></li>
               <li><a href="searchsales.php">Search for a particular Sales</a></li>
               <li><a href="">View Predictions</a></li>
             <li><a href="">Download Sales Report</a></li></ul><br/><br/>
-      <p style="text-align:center";>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="styles/images/sales.jpg" target="_blank"> <img src="styles/images/sales.jpg" alt="sales" title="sales" class="sales" ></a></p>
+      
     </main>
- <footer id="Footer"> <p style="text-align:center;">
+ <footer> <p style="text-align:center;">
         Copyright Peoples Health Pharmacy© 2021</p>
     </footer>
    

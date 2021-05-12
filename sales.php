@@ -20,13 +20,36 @@
               <li><a href="searchsales.php">Search Sales</a></li>
               <li><a href="">Predictions</a></li>
               <li><a href="">Download</a></li>
-              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
+              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
           </ul>
         </nav>
         </div>
     </header>
     <main>
-        <h1 style="text-align:center;color: #912121;">All Sales </h1>
+        <h1 style="text-align:center;color: #912121;">All Products </h1>
+        
+            <?php
+      //connects to database and runs query to display all products with id
+      require_once("functions/process.php");
+      $query = "select product_id, product_name from products";
+      $results = mysqli_query($conn, $query);
+      echo "<table width='50%' border='1'>";
+      echo "<tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        </tr>";
+      while ($row = mysqli_fetch_assoc($results))
+      {
+        echo "<tr>
+        <td>{$row['product_id']}</td>
+        <td>{$row['product_name']}</td>
+        </tr>";
+      }
+      echo "</table>";
+      mysqli_free_result($results);
+      
+      ?>
+        <br/><br/><h1 style="text-align:center;color: #912121;">All Sales </h1>
 
       <?php
       //connects to database and runs query to display all data in sales table
@@ -62,7 +85,7 @@
       ?>
 
     </main>
-     <footer id="Footer"> <p style="text-align:center;">
+     <footer> <p style="text-align:center;">
         Copyright Peoples Health Pharmacy© 2021</p>
     </footer>
   </body>

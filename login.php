@@ -14,7 +14,7 @@
          </a></div>
         <h1 style="text-align: center; color: #912121; ">Welcome to People Health pharmacy </h1>
     </header>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/>
       
     <main>
         <h2 style="text-align: center;">Please Login to view Sales records and predection</h2><br/><br/>
