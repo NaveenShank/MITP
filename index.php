@@ -26,7 +26,7 @@
               <li><a href="newsales.php">New Sales</a></li>
               <li><a href="">Predictions</a></li>
               <li><a href="">Download</a></li>
-              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
+              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Logout</a></li>
           </ul>
         </nav>
         </div>

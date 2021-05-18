@@ -16,11 +16,11 @@
           <ul>
               <li><a href="index.php">Home</a></li>
               <li><a href="sales.php">Sales</a></li>
-              <li><a href="searchsales.php" style="color:#ff8900;">Search Sales</a></li>
-              <li><a href="newsales.php">New Sales</a></li>
+              <li><a href="searchsales.php">Search Sales</a></li>
+              <li><a href="newsales.php" style="color:#ff8900;">New Sales</a></li>
               <li><a href="">Predictions</a></li>
               <li><a href="">Download</a></li>
-              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Logout</a></li>
+              <li><a href="login.php">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Logout</a></li>
           </ul>
         </nav>
         </div>
@@ -40,7 +40,9 @@
       <input type="number" name="units_sold" id="units_sold" Size="40" required="required"/></p>
       <p><label for="cost">Cost:</label>
       <input type="number" name="cost" id="cost" Size="40" required="required"/></p>
-      <p><input type="submit" name="submit" value="add"/></p></fieldset>
+      <p><input type="submit" name="submit" value="Add"/>&emsp;<button>Scan</button></p>
+          
+    </fieldset>
       </form>
       <p></p>
 
@@ -49,7 +51,7 @@
       require_once("functions/process.php");
       if (!$_POST)
       {
-        echo "<p>Please enter New Sale</p>";
+        echo "<p></p>";
       }
       else
       {
@@ -69,7 +71,7 @@
         }
         else
         {
-          echo "<p>Record updated not successful</p>";
+          echo "<p>Record update unsuccessful</p>";
         }
       }
 
